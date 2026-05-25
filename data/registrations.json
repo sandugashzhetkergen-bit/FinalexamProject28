@@ -1,0 +1,162 @@
+[
+    {
+        "event": "Python Workshop",
+        "user": "Ali",
+        "status": "approved"
+    },
+    {
+        "event": "AI Conference",
+        "user": "Dana",
+        "status": "pending"
+    },
+    {
+        "event": "Python Workshop",
+        "user": "Keith Travis",
+        "status": "rejected"
+    },
+    {
+        "event": "AI Conference",
+        "user": "Rebecca Bryant",
+        "status": "approved"
+    },
+    {
+        "event": "Python Workshop",
+        "user": "Lori Watson",
+        "status": "pending"
+    },
+    {
+        "event": "Python Workshop",
+        "user": "Mr. Sean Morgan",
+        "status": "rejected"
+    },
+    {
+        "event": "AI Conference",
+        "user": "Joel Kemp",
+        "status": "rejected"
+    },
+    {
+        "event": "AI Conference",
+        "user": "Robert Phillips",
+        "status": "rejected"
+    },
+    {
+        "event": "Hackathon",
+        "user": "Sarah Holmes",
+        "status": "pending"
+    },
+    {
+        "event": "Python Workshop",
+        "user": "Michael Hall",
+        "status": "approved"
+    },
+    {
+        "event": "AI Conference",
+        "user": "Kara King",
+        "status": "pending"
+    },
+    {
+        "event": "Hackathon",
+        "user": "Amanda Gibson",
+        "status": "pending"
+    },
+    {
+        "event": "Python Workshop",
+        "user": "Jenny Robinson",
+        "status": "approved"
+    },
+    {
+        "event": "AI Conference",
+        "user": "Tiffany Todd",
+        "status": "approved"
+    },
+    {
+        "event": "Hackathon",
+        "user": "Lisa Martin",
+        "status": "approved"
+    },
+    {
+        "event": "Hackathon",
+        "user": "Jacob Booth",
+        "status": "rejected"
+    },
+    {
+        "event": "AI Conference",
+        "user": "Erin Gibson",
+        "status": "approved"
+    },
+    {
+        "event": "Python Workshop",
+        "user": "Zachary Morgan",
+        "status": "rejected"
+    },
+    {
+        "event": "AI Conference",
+        "user": "Toni Mcmahon",
+        "status": "rejected"
+    },
+    {
+        "event": "AI Conference",
+        "user": "Kristi Torres",
+        "status": "approved"
+    },
+    {
+        "event": "Hackathon",
+        "user": "Angela Davidson",
+        "status": "approved"
+    },
+    {
+        "event": "Hackathon",
+        "user": "Erik Rodgers",
+        "status": "rejected"
+    },
+    {
+        "event": "Python Workshop",
+        "user": "Scott Gay",
+        "status": "approved"
+    },
+    {
+        "event": "Hackathon",
+        "user": "Amanda Lopez",
+        "status": "pending"
+    },
+    {
+        "event": "Hackathon",
+        "user": "Kari Lee",
+        "status": "approved"
+    },
+    {
+        "event": "Hackathon",
+        "user": "Jonathan Jones",
+        "status": "approved"
+    },
+    {
+        "event": "AI Conference",
+        "user": "Angela Wagner",
+        "status": "rejected"
+    },
+    {
+        "event": "AI Conference",
+        "user": "Justin Thompson DVM",
+        "status": "approved"
+    },
+    {
+        "event": "AI Conference",
+        "user": "Taylor Johnson",
+        "status": "approved"
+    },
+    {
+        "event": "AI Conference",
+        "user": "Kevin Hernandez",
+        "status": "approved"
+    },
+    {
+        "event": "Hackathon",
+        "user": "John Harrington",
+        "status": "approved"
+    },
+    {
+        "event": "AI Conference",
+        "user": "Molly Hunt",
+        "status": "rejected"
+    }
+]
