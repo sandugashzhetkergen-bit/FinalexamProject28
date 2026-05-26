@@ -17,5 +17,4 @@ def generate(register, count=20):
             user=fake.name(),
             status=fake.random_element(statuses)
         )
-
         register.add_registration(reg)
