@@ -1,14 +1,18 @@
 class EventRegister:
+
     def __init__(self):
         self.registrations = []
 
-    def add(self, reg):
-        for r in self.registrations:
-            if r.event == reg.event and r.user == reg.user:
-                return "DUPLICATE"
+    def add_registration(self, registration):
 
-        self.registrations.append(reg)
-        return "OK"
+        for reg in self.registrations:
 
-    def get_all(self):
-        return [r.to_dict() for r in self.registrations]
+            if reg.event == registration.event and reg.user == registration.user:
+                return "Duplicate registration!"
+
+        self.registrations.append(registration)
+
+        return "Registration added"
+    def show_registrations(self):
+        for reg in self.registrations:
+            print(reg.to_dict())

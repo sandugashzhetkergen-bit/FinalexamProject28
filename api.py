@@ -1,64 +1,37 @@
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
+
 from event_register import EventRegister
 from RegistrationChar import RegistrationChart
-import json
 
 app = FastAPI()
 
-register = EventRegister()
+db = EventRegister()
+chart = RegistrationChart("data/registrations.json")
 
 
-# Главная страница
-@app.get("/")
-def home():
-    return {
-        "message": "Event Registration API is working"
-    }
-
-
-# Все регистрации
-@app.get("/registrations")
-def get_registrations():
-
-    with open("data/registrations.json", "r", encoding="utf-8") as file:
-        data = json.load(file)
-
-    return data
-
-
-# Добавить регистрацию
 @app.post("/register")
-def add_registration(event: str, user: str, status: str):
-
-    result = register.add_registration(event, user, status)
-
-    return {
-        "result": result
-    }
+def register(event: str, user: str, status: str = "pending"):
+    return db.add(event, user, status)
 
 
-# Скачать JSON файл
-@app.get("/download-json")
-def download_json():
-
-    return FileResponse(
-        "data/registrations.json",
-        media_type="application/json",
-        filename="registrations.json"
-    )
+@app.get("/registrations")
+def get_all():
+    return db.load()
 
 
-# График регистраций
+@app.get("/by-event")
+def by_event():
+    data = db.load()
+    result = {}
+
+    for i in data:
+        result.setdefault(i["event"], []).append(i["user"])
+
+    return result
+
+
 @app.get("/chart")
-def get_chart():
-
-    chart = RegistrationChart("data/registrations.json")
-
-    chart_path = chart.create_bar_chart()
-
-    return FileResponse(
-        chart_path,
-        media_type="image/png",
-        filename="chart.png"
-    )
+def chart_route():
+    path = chart.create_bar_chart()
+    return FileResponse(path, media_type="image/png")

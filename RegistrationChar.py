@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+import os
 
 class RegistrationChart:
 
@@ -19,7 +20,10 @@ class RegistrationChart:
         plt.xlabel("Event")
         plt.ylabel("Participants")
 
-        plt.savefig("charts/chart.png")
+        os.makedirs("charts", exist_ok=True)
+
+        path = "charts/chart.png"
+        plt.savefig(path)
         plt.close()
 
-        return "charts/chart.png"
+        return path
